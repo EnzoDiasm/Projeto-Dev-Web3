@@ -1,1 +1,116 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enzo DM | Perfil Web3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Fundo com partículas -->
+    <div id="particles-js"></div>
+
+    <header>
+        <h1>🚀 Enzo DM</h1>
+        <p>Desenvolvedor em formação | Explorando o universo Web3 🌐</p>
+    </header>
+
+    <main>
+        <section id="identificacao">
+            <h2>👤 Identificação Pessoal</h2>
+            <p>Olá! Meu nome é <strong>Enzo Dias</strong>, sou estudante e desenvolvedor em formação com foco em tecnologias Web3, blockchain e inovação digital. Tenho interesse em entender como a descentralização pode transformar a forma como nos conectamos e interagimos na internet. Busco sempre aprender novas ferramentas e construir soluções criativas e seguras para o futuro digital.</p>
+        </section>
+
+        <section id="interesses">
+            <h2>💡 Áreas de Interesse dentro do Ecossistema Web3</h2>
+            <ul>
+                <li><strong>Blockchain e Criptomoedas:</strong> estudo sobre redes descentralizadas, contratos inteligentes e segurança digital.</li>
+                <li><strong>Desenvolvimento Web3:</strong> integração de front-end e back-end com blockchain.</li>
+                <li><strong>NFTs e Metaverso:</strong> criação de experiências digitais únicas e interativas.</li>
+                <li><strong>Finanças Descentralizadas (DeFi):</strong> curiosidade sobre novos modelos de economia digital.</li>
+            </ul>
+        </section>
+
+        <section id="habilidades">
+            <h2>⚙️ Principais Habilidades / Conhecimentos</h2>
+            <div class="grid">
+                <div>
+                    <h3>Técnicos</h3>
+                    <ul>
+                        <li>HTML, CSS e JavaScript</li>
+                        <li>Conceitos básicos de Blockchain</li>
+                        <li>Criação de páginas Web e portfólios digitais</li>
+                        <li>Carteiras digitais e tokens</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Sociais</h3>
+                    <ul>
+                        <li>Comunicação e colaboração</li>
+                        <li>Criatividade e pensamento crítico</li>
+                        <li>Responsabilidade e organização</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="aprendizado">
+            <h2>📘 Aprendizado Contínuo (Lifelong Learning)</h2>
+            <p>Estou em constante aprendizado, buscando aprimorar minhas habilidades em:</p>
+            <ul>
+                <li>Programação Web3 (Solidity, Smart Contracts)</li>
+                <li>Segurança digital e autenticação em blockchain</li>
+                <li>Inglês técnico para o mercado internacional</li>
+                <li>Habilidades interpessoais e trabalho remoto</li>
+            </ul>
+        </section>
+
+        <section id="links">
+            <h2>🔗 Links</h2>
+            <ul>
+                <li><strong>Portfólio:</strong> <a href="#" target="_blank">em breve</a></li>
+                <li><strong>GitHub:</strong> <a href="#" target="_blank">https://github.com/enzodm</a></li>
+                <li><strong>LinkedIn:</strong> <a href="#" target="_blank">em breve</a></li>
+            </ul>
+        </section>
+
+        <section id="wallet">
+            <h2>💼 Carteira Web3</h2>
+            <p>Endereço público (exemplo):</p>
+            <code>0xAbC1234Ef56789GhIjK01234LmNo5678PqRs9012</code>
+            <div id="qrcode"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Enzo DM — Todos os direitos reservados. | Feito com 💙 e Web3</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script>
+        // QR Code da wallet
+        new QRCode(document.getElementById("qrcode"), {
+            text: "0xAbC1234Ef56789GhIjK01234LmNo5678PqRs9012",
+            width: 128,
+            height: 128,
+            colorDark : "#00bfff",
+            colorLight : "#000000",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+
+        // Partículas animadas
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 80 },
+                "color": { "value": "#00bfff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.6 },
+                "size": { "value": 3 },
+                "move": { "speed": 2 }
+            }
+        });
+    </script>
+</body>
+</html>
