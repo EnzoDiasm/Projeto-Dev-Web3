@@ -1,111 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #e0e0e0;
-    background-color: #0a0a0f;
-    overflow-x: hidden;
-    position: relative;
+  font-family: 'Poppins', sans-serif;
+  color: #e0e0e0;
+  background-color: #0a0a0f;
+  overflow-x: hidden;
+  position: relative;
 }
 
 #particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: transform 0.2s ease-out;
 }
 
 header {
-    text-align: center;
-    padding: 100px 20px 60px;
+  text-align: center;
+  padding: 100px 20px 60px;
 }
 
 header h1 {
-    font-size: 3em;
-    color: #00bfff;
-    text-shadow: 0 0 15px #00bfff;
+  font-size: 3em;
+  color: #00bfff;
+  text-shadow: 0 0 15px #00bfff;
 }
 
 header p {
-    font-size: 1.2em;
-    color: #ccc;
-    margin-top: 10px;
+  font-size: 1.2em;
+  color: #ccc;
+  margin-top: 10px;
 }
 
 main {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    background: rgba(10, 10, 20, 0.6);
-    border-radius: 15px;
-    box-shadow: 0 0 30px rgba(0, 191, 255, 0.1);
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(10, 10, 20, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 191, 255, 0.1);
 }
 
 section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 h2 {
-    color: #00bfff;
-    margin-bottom: 10px;
-    border-left: 4px solid #00bfff;
-    padding-left: 10px;
-    text-shadow: 0 0 10px #00bfff;
+  color: #00bfff;
+  margin-bottom: 10px;
+  border-left: 4px solid #00bfff;
+  padding-left: 10px;
+  text-shadow: 0 0 10px #00bfff;
 }
 
 h3 {
-    color: #b0e0ff;
-    margin-top: 10px;
+  color: #b0e0ff;
+  margin-top: 10px;
 }
 
 p, ul, li {
-    line-height: 1.6;
-    color: #ddd;
+  line-height: 1.6;
+  color: #ddd;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 ul li::before {
-    content: "▹";
-    color: #00bfff;
-    margin-right: 8px;
+  content: "▹";
+  color: #00bfff;
+  margin-right: 8px;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 code {
-    background: rgba(0, 191, 255, 0.1);
-    padding: 8px 12px;
-    border-radius: 8px;
-    display: inline-block;
-    color: #00bfff;
-    font-family: monospace;
-}
-
-#qrcode {
-    margin-top: 15px;
+  background: rgba(0, 191, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  color: #00bfff;
+  font-family: monospace;
 }
 
 footer {
-    text-align: center;
-    padding: 40px;
-    color: #aaa;
-    font-size: 0.9em;
-    border-top: 1px solid rgba(0, 191, 255, 0.2);
+  text-align: center;
+  padding: 40px;
+  color: #aaa;
+  font-size: 0.9em;
+  border-top: 1px solid rgba(0, 191, 255, 0.2);
 }
 
+/* QR code fixo no canto */
+.qr-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 191, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 15px #00bfff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 100;
+}
+
+.qr-fixo img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.qr-fixo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px #00bfff;
+}
